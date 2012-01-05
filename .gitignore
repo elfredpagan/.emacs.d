@@ -2,3 +2,6 @@ elpa
 backups
 places
 .smex-items
+eshell
+.DS_Store
+auto-save-list

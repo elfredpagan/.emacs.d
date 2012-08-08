@@ -6,7 +6,7 @@
   (package-refresh-contents))
 
 ;; Add in your own as you wish:
-(defvar my-packages '(starter-kit starter-kit-lisp starter-kit-bindings starter-kit-ruby yasnippet yasnippet-bundle coffee-mode ctags magit haskell-mode haml-mode magithub org python-mode python-pep8 sass-mode scala-mode solarized-theme starter-kit-eshell starter-kit-js zenburn)
+(defvar my-packages '(starter-kit starter-kit-lisp starter-kit-bindings starter-kit-ruby yasnippet yasnippet-bundle coffee-mode ctags magit haskell-mode haml-mode magithub org python-mode python-pep8 sass-mode scala-mode solarized-theme starter-kit-eshell starter-kit-js)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)

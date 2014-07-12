@@ -1,12 +1,16 @@
 (require 'package)
 (add-to-list 'package-archives
              '("marmalade" . "http://marmalade-repo.org/packages/") t)
+(add-to-list 'package-archives
+                          '("melpa" . "http://melpa.milkbox.net/packages/") t)
 (package-initialize)
+(unless (package-installed-p 'scala-mode2)
+    (package-refresh-contents) (package-install 'scala-mode2))
 (when (not package-archive-contents)
   (package-refresh-contents))
 
 ;; Add in your own as you wish:
-(defvar my-packages '(starter-kit starter-kit-lisp starter-kit-bindings starter-kit-ruby yasnippet yasnippet-bundle coffee-mode ctags magit haskell-mode haml-mode magithub org python-mode python-pep8 sass-mode scala-mode solarized-theme starter-kit-eshell starter-kit-js)
+(defvar my-packages '(starter-kit starter-kit-lisp starter-kit-bindings starter-kit-ruby yasnippet yasnippet-bundle coffee-mode ctags magit haskell-mode haml-mode magithub org python-mode python-pep8 sass-mode scala-mode2 solarized-theme starter-kit-js)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
